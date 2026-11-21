@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bons plans plongée — les vraies promos, comparées</title>
+<meta name="description" content="Chaque semaine, les meilleures offres de matériel de plongée d'Europe, vérifiées et comparées entre boutiques. Pas de faux prix barrés.">
+<meta property="og:title" content="Bons plans plongée — les vraies promos, comparées">
+<meta property="og:description" content="Chaque semaine, les vraies baisses de prix du matériel de plongée, comparées entre boutiques européennes.">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --deep: #0b2740;
+    --deep-2: #0f3555;
+    --aqua: #38bdf8;
+    --sand: #f8fafc;
+    --ink: #0f172a;
+    --muted: #64748b;
+    --line: #e2e8f0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: var(--ink);
+    background: var(--sand);
+  }
+  a { color: var(--deep-2); }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+  /* ── En-tête ─────────────────────────────────────────────────────────── */
+  header.hero {
+    background: linear-gradient(160deg, var(--deep) 0%, var(--deep-2) 55%, #124a75 100%);
+    color: #e8f4ff;
+    padding: 64px 0 56px;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .02em; margin-bottom: 34px; font-size: 15px; text-transform: uppercase; color: #7dd3fc; }
+  .logo svg { width: 26px; height: 26px; }
+  h1 { font-size: clamp(30px, 5vw, 44px); line-height: 1.14; margin: 0 0 18px; letter-spacing: -.02em; }
+  h1 em { font-style: normal; color: #7dd3fc; }
+  .lede { font-size: 19px; color: #b8d9f2; margin: 0 0 32px; max-width: 560px; }
+
+  /* ── Formulaire ──────────────────────────────────────────────────────── */
+  form.signup { display: flex; gap: 10px; flex-wrap: wrap; max-width: 520px; }
+  form.signup input[type="email"] {
+    flex: 1 1 260px; padding: 14px 16px; border-radius: 10px; border: 1px solid #2a5b82;
+    background: rgba(255,255,255,.06); color: #fff; font: inherit;
+  }
+  form.signup input[type="email"]::placeholder { color: #8fb6d3; }
+  form.signup button {
+    padding: 14px 22px; border: 0; border-radius: 10px; background: var(--aqua); color: #06263d;
+    font: inherit; font-weight: 700; cursor: pointer; white-space: nowrap;
+  }
+  form.signup button:hover { background: #7dd3fc; }
+  .privacy { font-size: 13px; color: #8fb6d3; margin: 12px 0 0; }
+  .feedback { margin: 12px 0 0; font-size: 14px; min-height: 20px; }
+
+  /* ── Corps ───────────────────────────────────────────────────────────── */
+  section { padding: 44px 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: 0; }
+  h2 { font-size: 24px; letter-spacing: -.01em; margin: 0 0 18px; }
+  h3 { font-size: 17px; margin: 0 0 6px; }
+  .steps { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .step { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+  .step .num { display: inline-block; width: 26px; height: 26px; border-radius: 50%; background: var(--deep); color: #fff; text-align: center; line-height: 26px; font-size: 14px; font-weight: 700; margin-bottom: 10px; }
+  .step p { margin: 0; color: var(--muted); font-size: 15px; }
+
+  /* ── Exemples d'offres ───────────────────────────────────────────────── */
+  .deal { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin-bottom: 12px; display: flex; justify-content: space-between; gap: 16px; align-items: center; flex-wrap: wrap; }
+  .deal .name { font-weight: 600; }
+  .deal .shop { color: var(--muted); font-size: 14px; }
+  .deal .prices { text-align: right; }
+  .deal .now { font-size: 20px; font-weight: 800; color: #047857; }
+  .deal .was { color: var(--muted); text-decoration: line-through; font-size: 14px; }
+  .deal .gain { display: inline-block; font-size: 12px; font-weight: 700; color: #047857; background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 999px; padding: 2px 9px; margin-top: 4px; }
+  .example-note { font-size: 13px; color: var(--muted); margin-top: 14px; }
+
+  /* ── Pourquoi nous croire ────────────────────────────────────────────── */
+  ul.check { list-style: none; padding: 0; margin: 0; }
+  ul.check li { padding-left: 28px; position: relative; margin-bottom: 12px; }
+  ul.check li::before { content: "✓"; position: absolute; left: 0; top: 0; color: #047857; font-weight: 800; }
+
+  footer { padding: 30px 0 50px; color: var(--muted); font-size: 13px; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <path d="M12 3c3.5 0 6 2.6 6 6 0 4.4-6 12-6 12S6 13.4 6 9c0-3.4 2.5-6 6-6z"/>
+        <circle cx="12" cy="9" r="2.2"/>
+      </svg>
+      Bons plans plongée
+    </div>
+
+    <h1>Les vraies promos du matériel de plongée,<br><em>comparées entre boutiques.</em></h1>
+    <p class="lede">
+      Chaque jeudi, une sélection courte : les baisses de prix réelles sur les
+      ordinateurs, détendeurs, combinaisons et séjours. Prix vérifié contre les
+      autres boutiques européennes — pas un prix barré inventé la veille.
+    </p>
+
+    <form class="signup" id="signup" novalidate>
+      <input type="email" id="email" name="email" placeholder="votre@email.com" autocomplete="email" required>
+      <button type="submit">Recevoir les offres</button>
+    </form>
+    <p class="feedback" id="feedback"></p>
+    <p class="privacy">Gratuit, une fois par semaine, désinscription en un clic.</p>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h2>Comment ça marche</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="num">1</span>
+          <h3>On surveille</h3>
+          <p>Les catalogues de boutiques françaises, belges et européennes, chaque semaine.</p>
+        </div>
+        <div class="step">
+          <span class="num">2</span>
+          <h3>On compare</h3>
+          <p>Chaque offre est confrontée au prix pratiqué ailleurs. Si l'écart ne tient pas, elle est écartée.</p>
+        </div>
+        <div class="step">
+          <span class="num">3</span>
+          <h3>On envoie</h3>
+          <p>Trois à cinq offres, le jeudi. Le lien, le prix, la boutique. Rien d'autre à lire.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>À quoi ça ressemble</h2>
+
+      <div class="deal">
+        <div>
+          <div class="name">Ordinateur Cressi Donatello</div>
+          <div class="shop">Chez un revendeur français</div>
+        </div>
+        <div class="prices">
+          <div class="now">259 €</div>
+          <div class="was">329 €</div>
+          <span class="gain">−21 %</span>
+        </div>
+      </div>
+
+      <div class="deal">
+        <div>
+          <div class="name">Détendeur Aqualung Core Supreme</div>
+          <div class="shop">Chez un revendeur belge</div>
+        </div>
+        <div class="prices">
+          <div class="now">449 €</div>
+          <div class="was">529 €</div>
+          <span class="gain">−15 %</span>
+        </div>
+      </div>
+
+      <div class="deal">
+        <div>
+          <div class="name">Croisière Mer Rouge, 7 nuits</div>
+          <div class="shop">Départ dernière minute</div>
+        </div>
+        <div class="prices">
+          <div class="now">1 190 €</div>
+          <div class="was">1 490 €</div>
+          <span class="gain">−20 %</span>
+        </div>
+      </div>
+
+      <p class="example-note">
+        Exemples illustratifs — les offres réelles arrivent dans la première édition.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Ce qui nous distingue</h2>
+      <ul class="check">
+        <li><strong>Le prix barré est vérifié.</strong> Beaucoup de boutiques remontent leur prix pour annoncer « −40 % ». Ici, chaque offre est comparée au prix réel pratiqué ailleurs le même jour.</li>
+        <li><strong>Aucune boutique sponsorisée.</strong> Une offre est retenue parce qu'elle est intéressante, pas parce qu'elle rapporte plus de commission.</li>
+        <li><strong>Court, et une fois par semaine.</strong> Trois à cinq offres, cinq minutes de lecture.</li>
+        <li><strong>Livraison comprise.</strong> Un prix bas hors frais de port ne vaut rien : on compare le prix rendu chez vous.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Bons plans plongée · <span id="year"></span> · Contact : <a href="mailto:gooddealsdiving@gmail.com">gooddealsdiving@gmail.com</a></p>
+    <p>Les liens de cette lettre peuvent être affiliés. Cela ne change ni le prix payé, ni la sélection.</p>
+  </div>
+</footer>
+
+<script>
+  // ─────────────────────────────────────────────────────────────────────────
+  //  Où vont les inscriptions ?
+  //
+  //  Trois options, par ordre de simplicité :
+  //   1. Brevo (gratuit jusqu'à 300 envois/jour) : créez un formulaire, puis
+  //      collez son URL dans ENDPOINT ci-dessous.
+  //   2. Formspree (gratuit 50 envois/mois) : collez l'URL du formulaire.
+  //   3. Aucun service : laissez ENDPOINT vide, et le formulaire ouvrira
+  //      l'application mail avec l'adresse déjà remplie.
+  // ─────────────────────────────────────────────────────────────────────────
+  const ENDPOINT = ''; // ← coller ici l'URL du service d'e-mailing
+  const CONTACT = 'gooddealsdiving@gmail.com';
+
+  const form = document.getElementById('signup');
+  const feedback = document.getElementById('feedback');
+  const input = document.getElementById('email');
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const email = input.value.trim();
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
+      feedback.textContent = 'Cette adresse ne semble pas valide.';
+      feedback.style.color = '#fca5a5';
+      return;
+    }
+
+    if (!ENDPOINT) {
+      // Repli sans service : un e-mail pré-rempli, à envoyer en un clic.
+      const subject = encodeURIComponent('Inscription bons plans plongée');
+      const body = encodeURIComponent(`Bonjour,\n\nJe souhaite recevoir la sélection hebdomadaire.\n\nMon adresse : ${email}\n`);
+      window.location.href = `mailto:${CONTACT}?subject=${subject}&body=${body}`;
+      feedback.textContent = 'Dernière étape : envoyez l’e-mail qui vient de s’ouvrir.';
+      feedback.style.color = '#7dd3fc';
+      return;
+    }
+
+    try {
+      const response = await fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json', accept: 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      if (!response.ok) throw new Error(String(response.status));
+      feedback.textContent = 'C’est noté — vous recevrez la première sélection jeudi.';
+      feedback.style.color = '#86efac';
+      form.reset();
+    } catch {
+      feedback.textContent = 'Inscription impossible pour le moment. Réessayez plus tard.';
+      feedback.style.color = '#fca5a5';
+    }
+  });
+</script>
+</body>
+</html>
